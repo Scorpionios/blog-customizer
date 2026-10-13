@@ -177,3 +177,14 @@ export const defaultArticleState = {
 };
 
 export type ArticleStateType = typeof defaultArticleState;
+
+export type PropsFormElements = {
+  selected: OptionType;
+  setSelected: (key: keyof ArticleStateType, value: OptionType) => void;
+};
+
+export type PropsForm = {
+  initialParams: ArticleStateType;
+  setInitialParams: (value: ArticleStateType) => void;
+};
+// React.Dispatch<React.SetStateAction<OptionType>>
