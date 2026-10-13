@@ -24,7 +24,6 @@ export const ArticleParamsForm = ({
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const formRef = useRef<HTMLElement | null>(null);
   const [params, setParams] = useState(initialParams);
-
   const Change = (key: keyof ArticleStateType, value: OptionType): void => {
     setParams((prev) => ({ ...prev, [key]: value }));
   };
