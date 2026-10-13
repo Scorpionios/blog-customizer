@@ -7,6 +7,7 @@ import { SizeFont } from 'src/components/size-font/SizeFont';
 import { defaultArticleState } from 'src/constants/articleProps';
 import { ArrowButton } from 'src/ui/arrow-button';
 import { Button } from 'src/ui/button';
+import { Separator } from 'src/ui/separator/Separator';
 
 import type {
   OptionType,
@@ -64,6 +65,7 @@ export const ArticleParamsForm = ({
           <Font selected={params.fontFamilyOption} setSelected={Change} />
           <SizeFont selected={params.fontSizeOption} setSelected={Change} />
           <ColorFont selected={params.fontColor} setSelected={Change} />
+          <Separator color="#D7D7D7" />
           <ColorBackground selected={params.backgroundColor} setSelected={Change} />
           <ContentWidth selected={params.contentWidth} setSelected={Change} />
           <div className={styles.bottomContainer}>
