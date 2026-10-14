@@ -15,8 +15,7 @@ export const ArrowButton = ({
   isOpen,
   onClick,
 }: ArrowButtonProps): React.JSX.Element => {
-  const handleClick = (e: React.MouseEvent): void => {
-    e.stopPropagation();
+  const handleClick = (): void => {
     onClick();
   };
   return (

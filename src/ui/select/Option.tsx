@@ -24,8 +24,7 @@ export const Option = (props: OptionProps): React.JSX.Element => {
 
   const handleClick =
     (clickedValue: OptionType['value']): MouseEventHandler<HTMLLIElement> =>
-    (e: React.MouseEvent<HTMLLIElement>): void => {
-      e.stopPropagation();
+    (): void => {
       onClick(clickedValue);
     };
 
