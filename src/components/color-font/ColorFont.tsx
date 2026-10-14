@@ -13,13 +13,11 @@ export const ColorFont = ({
   };
 
   return (
-    <>
-      <Select
-        selected={selected}
-        onChange={handleOptionSelect}
-        options={options}
-        title="Цвет шрифта"
-      />
-    </>
+    <Select
+      selected={selected}
+      onChange={handleOptionSelect}
+      options={options}
+      title="Цвет шрифта"
+    />
   );
 };

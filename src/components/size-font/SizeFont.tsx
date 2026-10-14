@@ -13,14 +13,12 @@ export const SizeFont = ({
   };
 
   return (
-    <>
-      <RadioGroup
-        selected={selected}
-        name="radio"
-        onChange={handleOptionSelect}
-        options={options}
-        title="Размер шрифта"
-      />
-    </>
+    <RadioGroup
+      selected={selected}
+      name="radio"
+      onChange={handleOptionSelect}
+      options={options}
+      title="Размер шрифта"
+    />
   );
 };

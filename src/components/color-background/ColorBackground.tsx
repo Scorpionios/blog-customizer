@@ -13,13 +13,11 @@ export const ColorBackground = ({
   };
 
   return (
-    <>
-      <Select
-        selected={selected}
-        onChange={handleOptionSelect}
-        options={options}
-        title="Цвет фона"
-      />
-    </>
+    <Select
+      selected={selected}
+      onChange={handleOptionSelect}
+      options={options}
+      title="Цвет фона"
+    />
   );
 };

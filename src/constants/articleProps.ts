@@ -187,4 +187,3 @@ export type PropsForm = {
   initialParams: ArticleStateType;
   setInitialParams: (value: ArticleStateType) => void;
 };
-// React.Dispatch<React.SetStateAction<OptionType>>

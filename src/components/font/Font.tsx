@@ -13,13 +13,11 @@ export const Font = ({
   };
 
   return (
-    <>
-      <Select
-        selected={selected}
-        onChange={handleOptionSelect}
-        options={options}
-        title="Шрифт"
-      />
-    </>
+    <Select
+      selected={selected}
+      onChange={handleOptionSelect}
+      options={options}
+      title="Шрифт"
+    />
   );
 };

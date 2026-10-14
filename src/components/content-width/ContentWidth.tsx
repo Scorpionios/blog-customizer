@@ -13,13 +13,11 @@ export const ContentWidth = ({
   };
 
   return (
-    <>
-      <Select
-        selected={selected}
-        onChange={handleOptionSelect}
-        options={options}
-        title="Ширина контента"
-      />
-    </>
+    <Select
+      selected={selected}
+      onChange={handleOptionSelect}
+      options={options}
+      title="Ширина контента"
+    />
   );
 };
