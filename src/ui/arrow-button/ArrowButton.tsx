@@ -15,6 +15,9 @@ export const ArrowButton = ({
   isOpen,
   onClick,
 }: ArrowButtonProps): React.JSX.Element => {
+  const handleClick = (): void => {
+    onClick();
+  };
   return (
     /* Не забываем указаывать role и aria-label атрибуты для интерактивных элементов */
     <div
@@ -22,7 +25,7 @@ export const ArrowButton = ({
       aria-label="Открыть/Закрыть форму параметров статьи"
       tabIndex={0}
       className={clsx(styles.container, { [styles.container_open]: isOpen })}
-      onClick={onClick}
+      onClick={handleClick}
     >
       <img
         src={arrow}
