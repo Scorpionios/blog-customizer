@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.28.4",
+    "@playwright/test": "^1.64.0",
     "clsx": "^2.1.1",
     "core-js": "^3.45.1",
     "lodash-es": "^4.17.21",
@@ -81,5 +82,11 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "core-js@3.45.1": true,
+    "@parcel/watcher@2.6.0": true,
+    "unrs-resolver@1.11.1": true
   }
 }

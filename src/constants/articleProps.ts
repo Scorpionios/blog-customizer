@@ -177,3 +177,8 @@ export const defaultArticleState = {
 };
 
 export type ArticleStateType = typeof defaultArticleState;
+
+export type PropsForm = {
+  initialParams: ArticleStateType;
+  setInitialParams: (value: ArticleStateType) => void;
+};

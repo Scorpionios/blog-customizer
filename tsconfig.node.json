@@ -24,5 +24,11 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["vite.config.ts", "eslint.config.ts", "*.d.ts", ".storybook/*.ts", ".storybook/*.tsx"]
+  "include": [
+    "vite.config.ts",
+    "eslint.config.ts",
+    "*.d.ts",
+    ".storybook/*.ts",
+    ".storybook/*.tsx"
+  ]
 }
